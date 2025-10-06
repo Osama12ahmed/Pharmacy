@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery Gate Pharmacy</title>
+    <link rel="stylesheet" href="home-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    
+
+    <script>
+      function showSiteFeatures() {
+        swal({
+    title: "Welcome to our Online Pharmacy!",
+    text: 
+                "Our Website Features\n\n"+
+                "-----------------------------\n\n"+
+                "1. Cart system with validation \n\n" +
+                "2. Simple and user-friendly homepage design.\n\n" +
+                "3. Login panel with validation.\n\n" +
+                "4. Registration panel with validation.\n\n" +
+                "5. Utilization of local storage to enhance site performance.\n\n" +
+                "6. SweetAlert Lib to make our site more User-Friendly\n\n"+
+                "We hope you enjoy your shopping experience!",
+    icon: "info",
+    button: "Got it!",
+}).then((value) => {
+            
+            if (value) {
+                var audio = new Audio('sounds/welcome.mp3');
+                    audio.play();
+            }
+        });
+    }
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        showSiteFeatures();
+    });
+    </script>
+</head>
+
+<body>
+
+    <div class="bar">
+        <div class="logo">
+            <div class="image"></div>
+                <h2>GATE Pharmacy </h2>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li><a href="../Login System/index.html"><b>Sign up</b></a></li>
+                <li><a href="#cat"><b>Categories</b></a></li>
+                <li><a href="#spo"><b>Sponsored</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="info">
+        <div class="pr">
+            <a href="home.html" class="button-link">
+                <h1 class="header1">Welcome to: Recovery Gate</h1>
+            </a>
+
+            <br>
+            <br>
+            <h2>Where we are committed to providing the highest levels of healthcare for you and your loved ones</h2>
+            <p>Join us today and enjoy a safe and reliable shopping experience. You can rely on us to efficiently meet
+                all your healthcare needs with high quality.</p>
+        </div>
+        <div class="image1">
+
+        </div>
+
+    </div>
+
+
+    <div class="cards">
+        <div class="one-card">
+            <div class="title">
+                <div class="image"></div>
+                <h2>Never Let Shortages control Your Day</h2>
+            </div>
+            <div class="pr">Recovery Gate will help you to plan ahead and organize the shortage list. Searching many
+                suppliers to secure it for you.
+            </div>
+        </div>
+        <div class="two-card">
+            <div class="title">
+                <div class="image"></div>
+                <h2>Exclusive unmatched offers</h2>
+            </div>
+            <div class="pr">We bring the best offers from all suppliers in your region. Bringing your daily supplies at
+                minimum price from multiple locations
+            </div>
+        </div>
+        <div class="three-card">
+            <div class="title">
+                <div class="image"></div>
+                <h2>Plan now, order later</h2>
+            </div>
+            <div class="pr">We are your daily companion. Add all your needed supplies to your favorites list,
+                and search for them at any time
+            </div>
+        </div>
+    </div>
+
+    <h1 class="cat" id="cat">Categories</h1>
+    <div class="cat-list">
+        <div class="one">
+            <div class="image"></div>
+            <h3><a href="../cart_system/vitamins/index.html">Vitamins</a></h3>
+        </div>
+        <div class="two">
+            <div class="image"></div>
+            <h3><a href="../cart_system/home_care/index.html">Home Care</a></h3>
+        </div>
+        <div class="three">
+            <div class="image"></div>
+            <h3><a href="../cart_system/fitness/index.html">Fitness</a></h3>
+        </div>
+        <div class="four">
+            <div class="image"></div>
+            <h3><a href="../cart_system/baby_care/index.html">Baby Care</a></h3>
+        </div>
+        <div class="five">
+            <div class="image"></div>
+            <h3><a href="../cart_system/makeup/index.html">Makeup</a></h3>
+        </div>
+    </div>
+    <div class="more2">
+        <div class="info2">
+            <h1>List, Compare and Order</h1>
+            <h3>Prepare your medications list</h3>
+            <p>Start your day with a quick and neat experience of adding the shortage list to our engine, this will help
+                you to find and match the best offers</p>
+            <h3>Find and compare different offers</h3>
+            <p>Once your list is full, user our intelligent cart to check what best offers from tens of suppliers around
+                you. we will collect all of them for you</p>
+            <h3>Get your ordered delivered in 24 hours</h3>
+            <p>We strive to fullfil your order as fast as possible and you will be enjoying Free delivery (Same day
+                delivery if order is placed before 2:00 PM).</p>
+
+        </div>
+        <div class="image"></div>
+    </div>
+    <div class="sp-con">
+        <div class="con">
+            <h1 class="spo" id="spo">Sponsors</h1>
+            <div class="container">
+                <div class="con1">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="con2">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+
+                </div>
+                <div class="con3">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+        </div>
+        <div class="img"></div>
+
+    </div>
+    <button onclick="up()" id="btn">^</button>
+    <!-- <script src="app.js"></script> -->
+    <script src="js.js"></script>
+</body>
+
+</html>
